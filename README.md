@@ -1,6 +1,6 @@
 # Sasshash
 
-Sasshash is a simple CLI tool to quickly compile SASS into a browser-caching friendly CSS file, with a SHA1 hash of the compiled data in the filename.
+Sasshash is a simple CLI tool to quickly compile SASS into a browser-caching friendly CSS file, adding a SHA1 hash of the compiled data to the filename.
 
 ## Dependencies
 * [Ruby SASS](http://sass-lang.com/install) (node-sass version in the works)
