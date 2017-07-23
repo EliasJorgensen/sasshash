@@ -11,7 +11,7 @@ const args = process.argv.splice(2)
 
 // Only accept 2 args
 if (args.length !== 2) {
-    console.log("Usage: sasshash foo.scss bar.css")
+    console.log("Usage: sasshash foo.scss bar[.css]")
     process.exit()
 }
 
@@ -35,7 +35,11 @@ sass.on('close', exitCode => {
         process.exit()
     }
 
-    const filename = paths[1].split('.')[0]
+    let filename = paths[1].split('.')
+
+    filename.length === 2
+    ? filename = filename[0]
+    : filename = filename.slice(0, -1).join('.')
 
     const data = FS.readFileSync('/tmp/sasshash.tmp.css')
 
