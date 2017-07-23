@@ -1,6 +1,5 @@
 # Sasshash
 
-## About
 Sasshash is a simple CLI tool to quickly compile SASS into a browser-caching friendly CSS file, with a SHA1 hash of the compiled data in the filename.
 
 ## Dependencies
