@@ -19,7 +19,7 @@ if (args.length !== 2) {
 const paths = args.map(arg => Path.resolve(process.cwd(), arg))
 
 // Create SASS spawn process
-const sass = spawn('sass', ['--sourcemap=none', paths[0], '/tmp/sasshash.tmp.css'])
+const sass = spawn('sass', ['--sourcemap=none', '-t', 'compressed', paths[0], '/tmp/sasshash.tmp.css'])
 
 // Print error if sass returns one
 sass.stderr.on('data', data => {
