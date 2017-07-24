@@ -16,5 +16,5 @@ alias sasshash='node /path/to/sasshash/sasshash.js'
 ## Usage 
 ```bash
 sasshash foo.scss bar[.css]
-// => foo.cebf23e3a06fc8356bbc994c478947d2ad9d5bf8.css
+// => bar.cebf23e3a06fc8356bbc994c478947d2ad9d5bf8.css
 ```
